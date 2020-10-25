@@ -1,0 +1,11 @@
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\bin\Debug\ServiceDesk.Domain.dll
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\bin\Debug\ServiceDesk.Domain.pdb
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\bin\Debug\AutoMapper.dll
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\bin\Debug\ServiceDesk.Data.dll
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\bin\Debug\ServiceDesk.Data.pdb
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\bin\Debug\AutoMapper.xml
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\obj\Debug\ServiceDesk.Domain.csprojAssemblyReference.cache
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\obj\Debug\ServiceDesk.Domain.csproj.CoreCompileInputs.cache
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\obj\Debug\ServiceDesk.Domain.csproj.CopyComplete
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\obj\Debug\ServiceDesk.Domain.dll
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\obj\Debug\ServiceDesk.Domain.pdb
