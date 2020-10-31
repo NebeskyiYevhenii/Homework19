@@ -14,3 +14,5 @@ C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\
 C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\obj\Debug\Homework19.csproj.CopyComplete
 C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\obj\Debug\Homework19.exe
 C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\obj\Debug\Homework19.pdb
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\bin\Debug\Dapper.dll
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\bin\Debug\Dapper.xml

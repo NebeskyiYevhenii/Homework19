@@ -9,23 +9,17 @@ namespace Homework19
         {
             var controller = new TicketController();
 
-            var ticket = new CreateTicketPostModel
-            {
-                Title = "Title",
-                Type = "Ticket type",
-                Description = "Ticket Description"
-            };
-
-            var ticket2 = new CreateTicketPostModel
+            var ticket2 = new TicketPostModel
             {
                 Title = "Title2",
                 Type = "Ticket type2",
-                Description = "Ticket Description2"
+                Description = "Ticket Description2",
+                Date = System.DateTime.Now
             };
 
-            controller.CreateTicket(ticket);
-            controller.CreateTicket(ticket2);
-            var teket0 = controller.GetTicket(1);
+            var CreateTicket = controller.CreateTicket(ticket2);
+            var GetById = controller.GetById(3);
+            var GetAll = controller.GetAll();
 
         }
     }

@@ -9,3 +9,5 @@ C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\
 C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\obj\Debug\ServiceDesk.Domain.csproj.CopyComplete
 C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\obj\Debug\ServiceDesk.Domain.dll
 C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\obj\Debug\ServiceDesk.Domain.pdb
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\bin\Debug\Dapper.dll
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Domain\bin\Debug\Dapper.xml

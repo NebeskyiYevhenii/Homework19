@@ -1,48 +1,45 @@
-﻿using ServiceDesk.Data.Models;
+﻿using AutoMapper;
+using ServiceDesk.Data.Interfaces;
+using ServiceDesk.Data.Models;
 using ServiceDesk.Data.Repositories;
 using ServiceDesk.Domain.Models;
+using System.Collections.Generic;
 
 namespace ServiceDesk.Domain
 {
     public class ServiceDeskService
     {
-        private readonly TicketRepository _ticketRepository;
+        private readonly ITicketsRepository _ticketRepository;
+        private readonly IMapper _mapper;
         public ServiceDeskService()
         {
             _ticketRepository = new TicketRepository();
-        }
-        public void CreateTicket(TiketModel ticket)
-        {
-            // Проверка ести ли свободное  окно, 
-            // чтобы записать на мойку эту машину
+            _ticketRepository = new TicketRepositoryDB();
 
-            var tiketModel = new Ticket
+            var mapperConfig = new MapperConfiguration(cfg =>
             {
-                Id = ticket.Id,
-                Title = ticket.Title,
-                Type = ticket.Type,
-                Date = ticket.Date,
-                Description = ticket.Description
-            };
+                var map = cfg.CreateMap<TiketModel, Ticket>().ReverseMap();
+            });
 
-            _ticketRepository.Create(tiketModel);
-
+            _mapper = new Mapper(mapperConfig);
         }
-        public TiketModel GetTicket(int id)
+        public TiketModel CreateTicket(TiketModel ticket)
         {
+            var tic = _mapper.Map<Ticket>(ticket);
+            var tic1 = _ticketRepository.CreateTicket(tic);
+            return _mapper.Map<TiketModel>(tic1);
+        }
+        public TiketModel GetById(int id)
+        {
+            var Ticket1 = _ticketRepository.GetById(id);
 
-            var Ticket1 = _ticketRepository.Get(id);
+            return _mapper.Map<TiketModel>(Ticket1);
+        }
 
-            var tiketModel = new TiketModel
-            {
-                Id = Ticket1.Id,
-                Title = Ticket1.Title,
-                Type = Ticket1.Type,
-                Date = Ticket1.Date,
-                Description = Ticket1.Description
-            };
-
-            return tiketModel;
+        public IEnumerable<TiketModel> GetAll()
+        {
+            IEnumerable<Ticket> models = _ticketRepository.GetAll();
+            return _mapper.Map<IEnumerable<TiketModel>>(models);
         }
 
     }
