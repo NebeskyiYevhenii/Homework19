@@ -2,23 +2,29 @@
 using ServiceDesk.Domain;
 using ServiceDesk.Domain.Models;
 using ServiceDesk.Models.PostModels;
+using ServiceDesk.Models.ViewModels;
 using System.Collections.Generic;
 
 namespace ServiceDesk.Controller
 {
     public class TicketController
     {
-        private readonly ServiceDeskService _serviceDeskService;
+        private readonly TiketService _serviceDeskService;
         private readonly IMapper _mapper;
         //private int idTickets = 0;
 
         public TicketController()
         {
-            _serviceDeskService = new ServiceDeskService();
+            _serviceDeskService = new TiketService();
 
             var mapperConfig = new MapperConfiguration(cfg =>
             {
-                var map = cfg.CreateMap<TicketPostModel, TiketModel>().ReverseMap();
+                cfg.CreateMap<TicketPostModel, TiketModel>().ReverseMap();
+                cfg.CreateMap<TicketViewModel, TiketModel>().ReverseMap();
+
+                cfg.CreateMap<TicketDepartmentPostModel, TicketDepartmentModel>().ReverseMap();
+                cfg.CreateMap<TicketDepartmentViewModel, TicketDepartmentModel>().ReverseMap();
+
             });
 
             _mapper = new Mapper(mapperConfig);
@@ -41,6 +47,12 @@ namespace ServiceDesk.Controller
 
             return _mapper.Map<TicketPostModel>(Ticket1);
         }
+
+        public bool DelById(int id)
+        {
+            return _serviceDeskService.DelById(id);
+        }
+
         public IEnumerable<TicketPostModel> GetAll()
         {
             IEnumerable<TiketModel> models = _serviceDeskService.GetAll();

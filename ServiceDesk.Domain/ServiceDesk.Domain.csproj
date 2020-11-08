@@ -44,7 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ServiceDeskService.cs" />
+    <Compile Include="TiketDepartmentService.cs" />
+    <Compile Include="Models\TicketDepartmentModel.cs" />
+    <Compile Include="Models\TicketEmployeeModel.cs" />
+    <Compile Include="TiketEmployeeService.cs" />
+    <Compile Include="TiketService.cs" />
     <Compile Include="Models\TiketModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

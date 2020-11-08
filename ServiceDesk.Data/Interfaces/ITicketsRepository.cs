@@ -14,5 +14,7 @@ namespace ServiceDesk.Data.Interfaces
         Ticket CreateTicket(Ticket model);
 
         Ticket GetById(int id);
+
+        bool DelById(int id);
     }
 }

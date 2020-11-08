@@ -16,3 +16,8 @@ C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\
 C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\obj\Debug\Homework19.pdb
 C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\bin\Debug\Dapper.dll
 C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\bin\Debug\Dapper.xml
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\bin\Debug\EntityFramework.dll
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\bin\Debug\ServiceDesk.Data.dll.config
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\bin\Debug\EntityFramework.xml
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\Homework19\bin\Debug\EntityFramework.SqlServer.xml

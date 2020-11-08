@@ -22,13 +22,28 @@ namespace ServiceDesk.Data.Repositories
             {
                 connection.Open();
 
-                string sql = "Insert INTO Tickets(Title,Type,Date,Description) OUTPUT Inserted.id " +
-                    $"Values(\'{ticket.Title}\',\'{ticket.Type}\',\'{ticket.Date.ToString("s")}\',\'{ticket.Description}\')";
+                string sql = "Insert INTO Tickets(Title,TypeId,Date,Description) OUTPUT Inserted.id " +
+                    $"Values(\'{ticket.Title}\',\'{ticket.TicketDepartment.id}\',\'{ticket.Date.ToString("s")}\',\'{ticket.Description}\')";
                 var affectedRows = Convert.ToInt32(connection.ExecuteScalar(sql));
                 ticket.Id = affectedRows;
 
                 return ticket;
             }
+        }
+
+        public bool DelById(int id)
+        {
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+                try
+                {
+                    connection.Query<Ticket>($"DELETE FROM dbo.Tickets WHERE Tickets.Id={id}");
+                    return true;
+                }
+                catch
+                {
+                    return false;
+                }
+                 
         }
 
         public IEnumerable<Ticket> GetAll()
@@ -43,7 +58,7 @@ namespace ServiceDesk.Data.Repositories
         public Ticket GetById(int id)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
-                return connection.Query<Ticket>("SELECT * FROM dbo.CarWashers WHERE CarWashers.Id=@Id", new { Id = id }).FirstOrDefault();
+                return connection.Query<Ticket>("SELECT * FROM dbo.Tickets WHERE Tickets.Id=@Id", new { Id = id }).FirstOrDefault();
         }
     }
 }
