@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ServiceDesk.Data.Models
 {
-    public class TicketDepartment
+    public class Department
     {
         public int id { get; set; }
         public string name { get; set; }
         public ICollection<Ticket> Tickets { get; set; }
-        public ICollection<TicketEmployee> TicketEmployees { get; set; }
+        public ICollection<Employee> Employees { get; set; }
     }
 }

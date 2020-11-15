@@ -14,19 +14,19 @@ namespace ServiceDesk.Data.Repositories
             _ctx = new DepartmentContext();
         }
 
-        public TicketDepartment CreateTicketDepartment(TicketDepartment ticketDepartment)
+        public Department CreateTicketDepartment(Department ticketDepartment)
         {
             _ctx.TicketDepartments.Add(ticketDepartment);
             _ctx.SaveChanges();
             return ticketDepartment;
         }
 
-        public IEnumerable<TicketDepartment> GetAll()
+        public IEnumerable<Department> GetAll()
         {
             return _ctx.TicketDepartments.ToList();
         }
 
-        public TicketDepartment GetById(int id)
+        public Department GetById(int id)
         {
             return _ctx.TicketDepartments.FirstOrDefault(x => x.id == id);
         }

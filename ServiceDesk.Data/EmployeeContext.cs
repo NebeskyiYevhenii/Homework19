@@ -5,9 +5,9 @@ namespace ServiceDesk.Data
 {
     public class EmployeeContext : DbContext
     {
-        public EmployeeContext() : base(@"Server=.;Initial Catalog = master; Integrated Security = true")
+        public EmployeeContext() : base(@"Server=.;Initial Catalog = ServiceDesk1; Integrated Security = true")
         {
         }
-        public DbSet<TicketEmployee> TicketEmployee { get; set; }
+        public DbSet<Employee> TicketEmployee { get; set; }
     }
 }

@@ -11,6 +11,7 @@ namespace ServiceDesk.Domain
     {
         private readonly ITicketsRepository _ticketRepository;
         private readonly IMapper _mapper;
+
         public TiketService()
         {
             //_ticketRepository = new TicketRepositoryList();
@@ -20,11 +21,12 @@ namespace ServiceDesk.Domain
             var mapperConfig = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<TiketModel, Ticket>().ReverseMap();
-                cfg.CreateMap<TicketDepartmentModel, TicketDepartment>().ReverseMap();
+                cfg.CreateMap<DepartmentModel, Department>().ReverseMap();
             });
 
             _mapper = new Mapper(mapperConfig);
         }
+
         public TiketModel CreateTicket(TiketModel ticket)
         {
             var tic = _mapper.Map<Ticket>(ticket);
@@ -43,6 +45,7 @@ namespace ServiceDesk.Domain
         {
             return _ticketRepository.DelById(id);
         }
+
         public IEnumerable<TiketModel> GetAll()
         {
             IEnumerable<Ticket> models = _ticketRepository.GetAll();

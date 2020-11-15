@@ -9,7 +9,7 @@ namespace ServiceDesk.Models.ViewModels
         public DateTime Date { get; set; }
         public string Description { get; set; }
 
-        public int DepartmentId { get; set; }
-        public TicketDepartmentViewModel TicketDepartment { get; set; }
+        //public int DepartmentId { get; set; }
+        public DepartmentViewModel Department { get; set; }
     }
 }

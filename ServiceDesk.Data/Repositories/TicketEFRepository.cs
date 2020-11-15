@@ -31,14 +31,14 @@ namespace ServiceDesk.Data.Repositories
 
         public Ticket GetById(int id)
         {
-            return _ctx.Tickets.FirstOrDefault(x => x.Id == id);
+            return _ctx.Tickets.FirstOrDefault(x => x.id == id);
         }
 
         public bool DelById(int id)
         {
             try
             {
-                var entity = _ctx.Tickets.FirstOrDefault(x => x.Id == id);
+                var entity = _ctx.Tickets.FirstOrDefault(x => x.id == id);
 
                 _ctx.Tickets.Remove(entity);
 

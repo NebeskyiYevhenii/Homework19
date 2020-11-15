@@ -9,7 +9,7 @@ namespace ServiceDesk.Models.PostModels
         public DateTime Date { get; set; }
         public string Description { get; set; }
 
-        public int DepartmentId { get; set; }
-        public TicketDepartmentPostModel TicketDepartment { get; set; }
+        //public int DepartmentId { get; set; }
+        public DepartmentPostModel Department { get; set; }
     }
 }

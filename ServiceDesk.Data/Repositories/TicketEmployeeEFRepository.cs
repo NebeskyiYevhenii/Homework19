@@ -17,19 +17,19 @@ namespace ServiceDesk.Data.Repositories
             _ctx = new EmployeeContext();
         }
 
-        public TicketEmployee CreateTicketEmployee(TicketEmployee ticketEmployee)
+        public Employee CreateEmployeeEmployee(Employee ticketEmployee)
         {
             _ctx.TicketEmployee.Add(ticketEmployee);
             _ctx.SaveChanges();
             return ticketEmployee;
         }
 
-        public IEnumerable<TicketEmployee> GetAll()
+        public IEnumerable<Employee> GetAll()
         {
             return _ctx.TicketEmployee.ToList();
         }
 
-        public TicketEmployee GetById(int id)
+        public Employee GetById(int id)
         {
             return _ctx.TicketEmployee.FirstOrDefault(x => x.id == id);
         }

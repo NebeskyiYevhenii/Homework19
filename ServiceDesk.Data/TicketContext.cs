@@ -10,12 +10,24 @@ namespace ServiceDesk.Data
 {
     public class TicketContext : DbContext
     {
-        public TicketContext() : base(@"Server=.;Initial Catalog = master; Integrated Security = true")
+        public TicketContext() : base(@"Server=.;Initial Catalog = ServiceDesk1; Integrated Security = true")
         {
         }
 
         public DbSet<Ticket> Tickets { get; set; }
-        public DbSet<TicketDepartment> TicketDepartments { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Department>()
+                .HasMany(x => x.Tickets)
+                .WithRequired(x => x.Department);
+
+            modelBuilder.Entity<Department>()
+                .HasMany(x => x.Employees)
+                .WithRequired(x => x.Department);
+
+        }
     }
 }

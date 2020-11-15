@@ -26,10 +26,10 @@ namespace ServiceDesk.Data.Repositories
                 command.Connection = connection;
                 command.CommandType = System.Data.CommandType.Text;
                 var ret = command.CommandText = "Insert INTO Tickets(Title,DepartmentId,Date,Description) OUTPUT Inserted.id " +
-                    $"Values(\'{ticket.Title}\',\'{ticket.TicketDepartment.id}\',\'{ticket.Date.ToString("s")}\',\'{ticket.Description}\')";
+                    $"Values(\'{ticket.Title}\',\'{ticket.Department.id}\',\'{ticket.Date.ToString("s")}\',\'{ticket.Description}\')";
                 var id = Convert.ToInt32(command.ExecuteScalar());
 
-                ticket.Id = id;
+                ticket.id = id;
 
                 return ticket;
             }
@@ -54,9 +54,9 @@ namespace ServiceDesk.Data.Repositories
                 {
                     var carWash = new Ticket();
 
-                    carWash.Id = reader.GetInt32(0);
+                    carWash.id = reader.GetInt32(0);
                     carWash.Title = reader.GetString(1);
-                    carWash.DepartmentId = reader.GetInt32(2);
+                    //carWash.DepartmentId = reader.GetInt32(2);
                     carWash.Date = reader.GetDateTime(3);
                     carWash.Description = reader.GetString(4);
 
@@ -83,9 +83,9 @@ namespace ServiceDesk.Data.Repositories
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    ticket.Id = reader.GetInt32(0);
+                    ticket.id = reader.GetInt32(0);
                     ticket.Title = reader.GetString(1);
-                    ticket.DepartmentId = reader.GetInt32(2);
+                    //ticket.DepartmentId = reader.GetInt32(2);
                     ticket.Date = reader.GetDateTime(3);
                     ticket.Description = reader.GetString(4);
                 }

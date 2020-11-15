@@ -62,9 +62,22 @@
     <Compile Include="Interfaces\ITicketsDepartmantRepository.cs" />
     <Compile Include="Interfaces\ITicketsEmplooyeeRepository.cs" />
     <Compile Include="Interfaces\ITicketsRepository.cs" />
+    <Compile Include="Migrations\202011151452171_Initial_Create.cs" />
+    <Compile Include="Migrations\202011151452171_Initial_Create.designer.cs">
+      <DependentUpon>202011151452171_Initial_Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011151517535_Creating_link_between_the_ticket_and_the_department.cs" />
+    <Compile Include="Migrations\202011151517535_Creating_link_between_the_ticket_and_the_department.designer.cs">
+      <DependentUpon>202011151517535_Creating_link_between_the_ticket_and_the_department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011151520160_Сreating_communication_between_employee_and_department.cs" />
+    <Compile Include="Migrations\202011151520160_Сreating_communication_between_employee_and_department.designer.cs">
+      <DependentUpon>202011151520160_Сreating_communication_between_employee_and_department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Ticket.cs" />
-    <Compile Include="Models\TicketDepartment.cs" />
-    <Compile Include="Models\TicketEmployee.cs" />
+    <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\TicketDepartmentEFRepository.cs" />
     <Compile Include="Repositories\TicketEFRepository.cs" />
@@ -77,6 +90,17 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202011151452171_Initial_Create.resx">
+      <DependentUpon>202011151452171_Initial_Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011151517535_Creating_link_between_the_ticket_and_the_department.resx">
+      <DependentUpon>202011151517535_Creating_link_between_the_ticket_and_the_department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011151520160_Сreating_communication_between_employee_and_department.resx">
+      <DependentUpon>202011151520160_Сreating_communication_between_employee_and_department.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

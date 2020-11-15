@@ -26,7 +26,7 @@ namespace ServiceDesk.Data.Repositories
         public Ticket CreateTicket(Ticket ticket)
         {
             Tickets.Add(ticket);
-            ticket.Id = Tickets.Count;
+            ticket.id = Tickets.Count;
             return ticket;
         }
 

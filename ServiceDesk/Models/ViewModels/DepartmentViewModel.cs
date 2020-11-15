@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ServiceDesk.Models.ViewModels
 {
-    public class TicketDepartmentViewModel
+    public class DepartmentViewModel
     {
         public int id { get; set; }
         public string name { get; set; }
         public ICollection<TicketViewModel> Tickets { get; set; }
-        public ICollection<TicketEmployeeViewModel> TicketEmployees { get; set; }
+        public ICollection<EmployeeViewModel> Employees { get; set; }
     }
 }

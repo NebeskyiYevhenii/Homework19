@@ -14,3 +14,7 @@ C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\
 C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Data\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Data\bin\Debug\EntityFramework.xml
 C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Data\obj\Debug\ServiceDesk.Data.Migrations.Initial_Create.resources
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Data\obj\Debug\ServiceDesk.Data.csproj.GenerateResource.cache
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Data\obj\Debug\ServiceDesk.Data.Migrations.Creating_link_between_the_ticket_and_the_department.resources
+C:\Users\nebeskyi.yevhenii\OneDrive - ТОВ БАСКЕТ ТРЕЙД\Курсы\Homework\Homework19\Homework19\ServiceDesk.Data\obj\Debug\ServiceDesk.Data.Migrations.Сreating_communication_between_employee_and_department.resources

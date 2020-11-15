@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ServiceDesk.Models.PostModels
 {
-    public class TicketEmployeePostModel
+    public class EmployeePostModel
     {
         //public int id { get; set; }
         public string name { get; set; }
-        public int DepartmentId { get; set; }
-        public TicketDepartmentPostModel TicketDepartment { get; set; }
+        //public int DepartmentId { get; set; }
+        public DepartmentPostModel Department { get; set; }
     }
 }

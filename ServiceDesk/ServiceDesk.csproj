@@ -45,13 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\TicketController.cs" />
-    <Compile Include="Controller\TicketDepartmentController.cs" />
-    <Compile Include="Controller\TicketEmployeeController.cs" />
-    <Compile Include="Models\PostModels\TicketEmployeePostModel.cs" />
+    <Compile Include="Controller\DepartmentController.cs" />
+    <Compile Include="Controller\EmployeeController.cs" />
+    <Compile Include="Models\PostModels\EmployeePostModel.cs" />
     <Compile Include="Models\PostModels\TicketPostModel.cs" />
-    <Compile Include="Models\PostModels\TicketDepartmentPostModel.cs" />
-    <Compile Include="Models\ViewModels\TicketDepartmentViewModel.cs" />
-    <Compile Include="Models\ViewModels\TicketEmployeeViewModel.cs" />
+    <Compile Include="Models\PostModels\DepartmentPostModel.cs" />
+    <Compile Include="Models\ViewModels\DepartmentViewModel.cs" />
+    <Compile Include="Models\ViewModels\EmployeeViewModel.cs" />
     <Compile Include="Models\ViewModels\TicketViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

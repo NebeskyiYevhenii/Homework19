@@ -10,9 +10,9 @@ namespace ServiceDesk.Data
 {
     class DepartmentContext : DbContext
     {
-        public DepartmentContext() : base(@"Server=.;Initial Catalog = master; Integrated Security = true")
+        public DepartmentContext() : base(@"Server=.;Initial Catalog = ServiceDesk1; Integrated Security = true")
         {
         }
-        public DbSet<TicketDepartment> TicketDepartments { get; set; }
+        public DbSet<Department> TicketDepartments { get; set; }
     }
 }

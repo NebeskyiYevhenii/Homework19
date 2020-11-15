@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServiceDesk.Models.ViewModels
+namespace ServiceDesk.Models.PostModels
 {
-    public class TicketEmployeeViewModel
+    public class DepartmentPostModel
     {
         public int id { get; set; }
         public string name { get; set; }
-        public int DepartmentId { get; set; }
-        public TicketDepartmentViewModel TicketDepartment { get; set; }
+        public ICollection<TicketPostModel> Tickets { get; set; }
+        public ICollection<EmployeePostModel> Employees { get; set; }
     }
 }

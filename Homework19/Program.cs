@@ -8,26 +8,26 @@ namespace Homework19
         static void Main(string[] args)
         {
             var controller = new TicketController();
-            var controllerDepartment = new TicketDepartmentController();
-            var controllerEmployee = new TicketEmployeeController();
+            var controllerDepartment = new DepartmentController();
+            var controllerEmployee = new EmployeeController();
 
             var ticket2 = new TicketPostModel
             {
                 Title = "Title3",
                 Description = "Ticket Description2",
                 Date = System.DateTime.Now,
-                DepartmentId = 6,
+                //DepartmentId = 6,
             };
 
-            var ticketDepartment = new TicketDepartmentPostModel
+            var ticketDepartment = new DepartmentPostModel
             {
                 name = "Department1"
             };
 
-            var ticketEmployee = new TicketEmployeePostModel
+            var ticketEmployee = new EmployeePostModel
             {
                 name = "Yasha",
-                DepartmentId = 6,
+                //DepartmentId = 6,
             };
 
             //var CreateTicketEmployee = controllerEmployee.CreateTicketEmployee(ticketEmployee);

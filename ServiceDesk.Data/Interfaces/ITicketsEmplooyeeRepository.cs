@@ -9,10 +9,10 @@ namespace ServiceDesk.Data.Interfaces
 {
     public interface ITicketsEmplooyeeRepository
     {
-        IEnumerable<TicketEmployee> GetAll();
+        IEnumerable<Employee> GetAll();
 
-        TicketEmployee CreateTicketEmployee(TicketEmployee model);
+        Employee CreateEmployeeEmployee(Employee model);
 
-        TicketEmployee GetById(int id);
+        Employee GetById(int id);
     }
 }

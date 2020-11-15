@@ -23,9 +23,9 @@ namespace ServiceDesk.Data.Repositories
                 connection.Open();
 
                 string sql = "Insert INTO Tickets(Title,TypeId,Date,Description) OUTPUT Inserted.id " +
-                    $"Values(\'{ticket.Title}\',\'{ticket.TicketDepartment.id}\',\'{ticket.Date.ToString("s")}\',\'{ticket.Description}\')";
+                    $"Values(\'{ticket.Title}\',\'{ticket.Department.id}\',\'{ticket.Date.ToString("s")}\',\'{ticket.Description}\')";
                 var affectedRows = Convert.ToInt32(connection.ExecuteScalar(sql));
-                ticket.Id = affectedRows;
+                ticket.id = affectedRows;
 
                 return ticket;
             }

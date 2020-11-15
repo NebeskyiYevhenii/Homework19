@@ -22,8 +22,8 @@ namespace ServiceDesk.Controller
                 cfg.CreateMap<TicketPostModel, TiketModel>().ReverseMap();
                 cfg.CreateMap<TicketViewModel, TiketModel>().ReverseMap();
 
-                cfg.CreateMap<TicketDepartmentPostModel, TicketDepartmentModel>().ReverseMap();
-                cfg.CreateMap<TicketDepartmentViewModel, TicketDepartmentModel>().ReverseMap();
+                cfg.CreateMap<DepartmentPostModel, DepartmentModel>().ReverseMap();
+                cfg.CreateMap<DepartmentViewModel, DepartmentModel>().ReverseMap();
 
             });
 
